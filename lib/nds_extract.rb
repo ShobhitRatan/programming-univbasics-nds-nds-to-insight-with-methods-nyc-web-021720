@@ -8,7 +8,7 @@ def gross_for_director(director_data)
   for x in director_data[:movies]
     total_g += x[:worldwide_gross]
   end
-  total_g   
+  total_g
 end
 
 # Write a method that, given an NDS creates a new Hash
@@ -17,8 +17,8 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {}
-  for x in nds do 
+  for x in nds do
     result[x[:name]] = gross_for_director(x)
-  end 
+  end
   result 
 end
